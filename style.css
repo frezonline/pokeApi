@@ -1,0 +1,37 @@
+*{
+    background-color:salmon;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+
+.mainButton{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickButton{
+    background-color:cornflowerblue;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 25px;
+}
+
+#app{
+    display: flex;
+    justify-content: space-around;
+    border: black 2px solid;
+    margin: 20px;
+}
+
+.header__title{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoPokemon{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column
+}
