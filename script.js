@@ -10,7 +10,7 @@ let imgUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/p
 let person = document.getElementById('app');
 
 AddBtn.addEventListener("click", function() {
-	const randomСharacter = Math.floor(Math.random()*83);
+	const randomСharacter = Math.floor(Math.random()*895);
 
 	fetch((imgUrl, baseUrl) + randomСharacter).then(response => response.json()).then(json => {
 		console.log(json);
