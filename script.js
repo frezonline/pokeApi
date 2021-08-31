@@ -5,9 +5,9 @@ const selectors = {
 
 const AddBtn = document.querySelector(selectors.AddBtn);
 
-let baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
-let imgUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
-let person = document.getElementById('app');
+const baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
+const imgUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
+const person = document.getElementById('app');
 
 AddBtn.addEventListener("click", function() {
 	const randomСharacter = Math.floor(Math.random()*895);
