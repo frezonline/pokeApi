@@ -1,37 +1,74 @@
+
 *{
-    background-color:salmon;
-    font-family: 'Sorts Mill Goudy', serif;
+    /* background-color:brown; */
+    font-family: 'Fredoka One', cursive;
+    margin: 0px;
+    padding: 0px;
 }
 
+body{
+    background-image:url("/Poke Game/O7ZWigt.png.725b831db68abb22ad7b05e112bc9c52.png");
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-attachment:fixed;
+    background-size:cover;
+} 
+
+
+.header__title{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    padding: 5px;
+    margin: 5px;
+    color:gold;
+    text-shadow: rgb(0, 102, 255) 6px 0px;
+}
+
+#app{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+.namePokemon{
+    margin: 20px;
+    color:white;
+    text-shadow: black 2px 2px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .mainButton{
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .clickButton{
-    background-color:cornflowerblue;
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 25px;
+    background-color:chocolate;
+    color: white;
+    text-shadow: black 2px 0px;
+    font-family:  'Fredoka One';
+    font-size: 35px;
+    padding: 5px;
 }
 
-#app{
-    display: flex;
-    justify-content: space-around;
-    border: black 2px solid;
-    margin: 20px;
-}
-
-.header__title{
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-}
 
 .infoPokemon{
     display: flex;
     justify-content: space-around;
-    flex-direction: column
+    flex-direction: column;
+    
+}
+
+.imgPokemon{
+    display: flex;
+    min-width: 150px;
+    max-width: 250px;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
