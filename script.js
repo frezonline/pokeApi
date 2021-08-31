@@ -16,7 +16,7 @@ AddBtn.addEventListener("click", function() {
 		console.log(json);
 		person.innerHTML = `
 		<div class="infoPokemon">
-		<img id=${randomСharacter} class="imgPokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomСharacter}.png"${json.front_default}</img>
+		<img id=${randomСharacter} class="imgPokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomСharacter}.png"</img>
 		<h1 id=${randomСharacter} class="namePokemon">${json.name}</h1>
 		</div>
 		`
