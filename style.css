@@ -1,12 +1,12 @@
 
 *{
     font-family: 'Fredoka One', cursive;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background-image:url("O7ZWigt.png.725b831db68abb22ad7b05e112bc9c52.png");
+    background-image:url("../Poke Game/img/O7ZWigt.png.725b831db68abb22ad7b05e112bc9c52.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -20,17 +20,17 @@ header{
     margin: 0 auto;
 }
 
-.header__title{
+.headerTitle{
     display: flex;
     justify-content: center; 
     font-size: 80px;
     padding: 5px;
     margin: 5px;
     color:gold;
-    text-shadow: rgb(0, 102, 255) 6px 0px;
+    text-shadow: rgb(0, 102, 255) 6px 0;
 }
 
-#app{
+#pokemonInfoBlock{
     display: flex;
     justify-content: space-around;
     width: auto;
@@ -47,16 +47,16 @@ header{
     justify-content: center;
 }
 
-.mainButton{
+.pokemonRender{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.clickButton{
+.pokemonRenderButton{
     background-color:chocolate;
     color: white;
-    text-shadow: black 2px 0px;
+    text-shadow: black 2px 0;
     font-family:  'Fredoka One';
     font-size: 35px;
     padding: 5px;
@@ -70,7 +70,7 @@ header{
     
 }
 
-.imgPokemon{
+.imagePokemon{
     display: flex;
     max-width: 230px;
     justify-content: center;
@@ -79,7 +79,7 @@ header{
 
 
 @media only screen and (max-device-width: 748px) {
-    #blockPokemon{
+    #headerBlock{
       width: auto;
       min-width: 600px;
     }

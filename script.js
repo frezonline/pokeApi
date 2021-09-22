@@ -1,26 +1,28 @@
 const selectors = {
-	AddBtn: '.clickButton',
-}
+  ClickPokemonRenderButton: ".pokemonRenderButton",
+};
 
-const AddBtn = document.querySelector(selectors.AddBtn);
+const ClickPokemonRenderButton = document.querySelector(
+  selectors.ClickPokemonRenderButton
+);
 
-const baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
-const imgUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'
-const person = document.getElementById('app');
+const baseUrl = "https://pokeapi.co/api/v2/pokemon/";
+const baseImgUrl =
+  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
+const character = document.getElementById("pokemonInfoBlock");
 
-AddBtn.addEventListener("click", function() {
-	const randomСharacter = Math.floor(Math.random()*895);
+ClickPokemonRenderButton.addEventListener("click", function () {
+  const randomСharacter = Math.floor(Math.random() * 895);
 
-	fetch((imgUrl, baseUrl) + randomСharacter).then(response => response.json()).then(json => {
-		console.log(json);
-		person.innerHTML = `
-		<div class="infoPokemon">
-			<div class="imgPoke">
-				<img id=${randomСharacter} class="imgPokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomСharacter}.png"</img>
-			</div>
-		<h1 id=${randomСharacter} class="namePokemon">${json.name}</h1>
+  fetch((baseImgUrl, baseUrl) + randomСharacter)
+    .then((response) => response.json())
+    .then((json) => {
+      character.innerHTML = `
+		<div class="characterData">
+			<img id=${randomСharacter} class="imagePokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomСharacter}.png"</img>
+			<h1 id=${randomСharacter} class="namePokemon">${json.name}</h1>
 		</div>
-		`
-	}); 
-	return AddBtn;
+		`;
+    });
+  return ClickPokemonRenderButton;
 });
