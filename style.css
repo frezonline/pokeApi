@@ -1,0 +1,86 @@
+
+*{
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url("../Poke Game/img/O7ZWigt.png.725b831db68abb22ad7b05e112bc9c52.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+} 
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.headerTitle{
+    display: flex;
+    justify-content: center; 
+    font-size: 80px;
+    padding: 5px;
+    margin: 5px;
+    color:gold;
+    text-shadow: rgb(0, 102, 255) 6px 0;
+}
+
+#pokemonInfoBlock{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+.namePokemon{
+    margin: 20px;
+    color:white;
+    text-shadow: black 2px 2px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pokemonRender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemonRenderButton{
+    background-color:chocolate;
+    color: white;
+    text-shadow: black 2px 0;
+    font-family:  'Fredoka One';
+    font-size: 35px;
+    padding: 5px;
+}
+
+
+.infoPokemon{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.imagePokemon{
+    display: flex;
+    max-width: 230px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+@media only screen and (max-device-width: 748px) {
+    #headerBlock{
+      width: auto;
+      min-width: 600px;
+    }
+  }
